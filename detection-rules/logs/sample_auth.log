@@ -1,0 +1,42 @@
+Nov 19 08:01:12 ubuntu-srv sshd[1021]: Accepted publickey for alice from 192.168.1.20 port 51234 ssh2: RSA SHA256:Hk3x9ExampleKeyFingerprint
+Nov 19 08:01:12 ubuntu-srv sshd[1021]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Nov 19 08:15:40 ubuntu-srv sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/apt update
+Nov 19 08:15:40 ubuntu-srv sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alice(uid=1000)
+Nov 19 08:15:52 ubuntu-srv sudo: pam_unix(sudo:session): session closed for user root
+Nov 19 09:02:31 ubuntu-srv sshd[1188]: Failed password for bob from 192.168.1.35 port 40122 ssh2
+Nov 19 09:02:39 ubuntu-srv sshd[1188]: Accepted password for bob from 192.168.1.35 port 40122 ssh2
+Nov 19 09:02:39 ubuntu-srv sshd[1188]: pam_unix(sshd:session): session opened for user bob(uid=1001) by (uid=0)
+Nov 19 11:47:03 ubuntu-srv sshd[1302]: Received disconnect from 192.168.1.20 port 51234:11: disconnected by user
+Nov 19 11:47:03 ubuntu-srv sshd[1021]: pam_unix(sshd:session): session closed for user alice
+Nov 19 14:22:10 ubuntu-srv sshd[1450]: Invalid user admin from 203.0.113.45 port 52811
+Nov 19 14:22:12 ubuntu-srv sshd[1450]: Failed password for invalid user admin from 203.0.113.45 port 52811 ssh2
+Nov 19 14:22:15 ubuntu-srv sshd[1452]: Invalid user test from 203.0.113.45 port 52819
+Nov 19 14:22:17 ubuntu-srv sshd[1452]: Failed password for invalid user test from 203.0.113.45 port 52819 ssh2
+Nov 19 14:22:20 ubuntu-srv sshd[1454]: Invalid user oracle from 203.0.113.45 port 52827
+Nov 19 14:22:22 ubuntu-srv sshd[1454]: Failed password for invalid user oracle from 203.0.113.45 port 52827 ssh2
+Nov 19 14:22:25 ubuntu-srv sshd[1456]: Invalid user ubuntu from 203.0.113.45 port 52834
+Nov 19 14:22:27 ubuntu-srv sshd[1456]: Failed password for invalid user ubuntu from 203.0.113.45 port 52834 ssh2
+Nov 19 14:22:30 ubuntu-srv sshd[1458]: Failed password for root from 203.0.113.45 port 52841 ssh2
+Nov 19 14:22:33 ubuntu-srv sshd[1458]: Failed password for root from 203.0.113.45 port 52841 ssh2
+Nov 19 14:22:36 ubuntu-srv sshd[1458]: Failed password for root from 203.0.113.45 port 52841 ssh2
+Nov 19 14:22:37 ubuntu-srv sshd[1458]: error: maximum authentication attempts exceeded for root from 203.0.113.45 port 52841 ssh2 [preauth]
+Nov 19 14:22:41 ubuntu-srv sshd[1462]: Failed password for root from 203.0.113.45 port 52855 ssh2
+Nov 19 14:22:44 ubuntu-srv sshd[1462]: Failed password for root from 203.0.113.45 port 52855 ssh2
+Nov 19 14:22:47 ubuntu-srv sshd[1464]: Invalid user postgres from 203.0.113.45 port 52863
+Nov 19 14:22:49 ubuntu-srv sshd[1464]: Failed password for invalid user postgres from 203.0.113.45 port 52863 ssh2
+Nov 19 14:22:52 ubuntu-srv sshd[1466]: Failed password for deploy from 203.0.113.45 port 52870 ssh2
+Nov 19 14:22:55 ubuntu-srv sshd[1466]: Failed password for deploy from 203.0.113.45 port 52870 ssh2
+Nov 19 14:22:58 ubuntu-srv sshd[1468]: Accepted password for deploy from 203.0.113.45 port 52877 ssh2
+Nov 19 14:22:58 ubuntu-srv sshd[1468]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Nov 19 14:23:41 ubuntu-srv sudo:   deploy : TTY=pts/1 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/bash
+Nov 19 14:23:41 ubuntu-srv sudo: pam_unix(sudo:session): session opened for user root(uid=0) by deploy(uid=1002)
+Nov 19 14:24:05 ubuntu-srv useradd[1493]: new user: name=support, UID=1003, GID=1003, home=/home/support, shell=/bin/bash
+Nov 19 14:24:12 ubuntu-srv passwd[1497]: pam_unix(passwd:chauthtok): password changed for support
+Nov 19 14:24:30 ubuntu-srv usermod[1501]: add 'support' to group 'sudo'
+Nov 19 14:25:02 ubuntu-srv sshd[1468]: Received disconnect from 203.0.113.45 port 52877:11: disconnected by user
+Nov 19 14:25:02 ubuntu-srv sshd[1468]: pam_unix(sshd:session): session closed for user deploy
+Nov 19 15:10:18 ubuntu-srv sshd[1610]: Failed password for invalid user guest from 198.51.100.23 port 33001 ssh2
+Nov 19 15:10:21 ubuntu-srv sshd[1610]: Failed password for invalid user guest from 198.51.100.23 port 33001 ssh2
+Nov 19 15:10:25 ubuntu-srv sshd[1612]: Failed password for invalid user pi from 198.51.100.23 port 33010 ssh2
+Nov 19 16:30:44 ubuntu-srv sudo: pam_unix(sudo:auth): authentication failure; logname=bob uid=1001 euid=0 tty=/dev/pts/2 ruser=bob rhost=  user=bob
+Nov 19 16:30:49 ubuntu-srv sudo:      bob : 3 incorrect password attempts ; TTY=pts/2 ; PWD=/home/bob ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
